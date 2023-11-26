@@ -1,0 +1,68 @@
+/* PARA TITULOS */
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;600&family=Pacifico&display=swap');
+/* font-family: 'Marhey', sans-serif; */
+
+/* TEXTOS */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Urbanist:wght@300;500;600&display=swap');
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Urbanist', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 20px;
+
+}
+
+header {
+    background: linear-gradient(to bottom, black, rgba(156, 153, 153, 0.217));;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: -20px -20px 30px -20px;
+    height: 80vh;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: row ;
+}
+
+.titulo_container {
+    display: flex;
+    margin: auto 0px auto 30px;
+}
+
+.texto-imagen_container {
+    margin: auto 0px auto 50px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    color: white;
+    font-size: 80px;
+    font-family: 'Marhey', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: c;
+}
+
+.texto {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: 'Marhey', sans-serif;
+}
+
+.imagen {
+    margin-top: -10px;
+}

@@ -23,6 +23,22 @@ Ver como hace lo de cada producto
         - que en wsp te ponga ya un mensaje con el link del producto y con un msj de quiero info sobre esto
 
 
+    <button id="whatsappButton">Enviar mensaje a WhatsApp</button>
+
+    document.getElementById('whatsappButton').addEventListener('click', function() {
+    // Número de teléfono y mensaje predefinido
+    var phoneNumber = 3413076880;  // Reemplaza con el número de teléfono al que deseas enviar el mensaje
+    var message = 'Hola, tirame mas info gracias.';
+  
+    // Crear el enlace con el protocolo whatsapp
+    var whatsappLink = 'whatsapp://send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
+  
+    // Redirigir a WhatsApp
+    window.location.href = whatsappLink;
+    });
+
+
+
 
 
 
