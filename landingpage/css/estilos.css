@@ -22,14 +22,16 @@ header {
     background: linear-gradient(to bottom, black, rgba(156, 153, 153, 0.217));;
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
     margin: -20px -20px 30px -20px;
     height: 80vh;
+    justify-content: space-evenly;
+
 }
 
 .header_container {
     display: flex;
     flex-direction: row ;
+    justify-content: space-evenly;
 }
 
 .titulo_container {
@@ -51,7 +53,7 @@ header {
     font-family: 'Marhey', sans-serif;
     text-transform: uppercase;
     line-height: 1.2;
-    text-align: c;
+    text-align: left;
 }
 
 .texto {
