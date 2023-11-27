@@ -71,6 +71,7 @@ header {
     margin-bottom: 40px;
     color: white;
     font-family: 'Marhey', sans-serif;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.737);
 }
 
 
@@ -327,7 +328,7 @@ header {
     }
 
     .texto {
-        color: black;
+        color: rgb(255, 255, 255);
         width: 85vw;
     }
 
