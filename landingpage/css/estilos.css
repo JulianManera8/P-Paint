@@ -7,6 +7,10 @@
 /* font-family: 'Pacifico', cursive; */
 /* font-family: 'Urbanist', sans-serif; */
 
+/* PARA TITULOS DE FIGURAS */
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@600&display=swap');
+/* font-family: 'Shantell Sans', cursive; */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,23 +19,26 @@
 
 body {
     margin: 20px;
-
 }
 
+/* ============================================= */
+/* ARRANCA LA SECCION DEL HEADER */
+
+
 header {
-    background: linear-gradient(to bottom, black, rgba(156, 153, 153, 0.217));;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 255)), radial-gradient(circle, rgb(255, 255, 255), rgb(0, 0, 0));
     display: flex;
-    text-align: center;
     margin: -20px -20px 30px -20px;
     height: 80vh;
-    justify-content: space-evenly;
-
+    justify-content:center;
 }
 
 .header_container {
     display: flex;
     flex-direction: row ;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    text-align: center;
+    margin: -50px 30px 0px;
 }
 
 .titulo_container {
@@ -41,7 +48,7 @@ header {
 
 .texto-imagen_container {
     margin: auto 0px auto 50px;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -57,7 +64,7 @@ header {
 }
 
 .texto {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     margin-top: -20px;
     margin-bottom: 40px;
@@ -65,6 +72,215 @@ header {
     font-family: 'Marhey', sans-serif;
 }
 
-.imagen {
-    margin-top: -10px;
+
+
+.imagen img {
+    width: 50vw;   
+}
+
+.signoBajar {
+    margin: auto;    
+    width: 80px;
+    animation: rebotar 1s 6;
+    position: relative;
+    top: -40px;
+}
+
+.signoBajar img {
+    opacity: 0.6;
+}
+
+@keyframes rebotar {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    40% {
+      transform: translateY(-20px);
+      opacity: 0.1;
+    }
+    60% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+}
+
+/* ============================================= */
+/* ARRANCA LA SECCION DE LAS FIGURAS/PRODUCTOS */
+
+
+.productos_container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.producto {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.264);
+    height: 430px;
+}
+.productobrolygoku {
+    height: 440px;
+}
+
+.producto img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.fotogoku {
+    background: linear-gradient(to bottom, rgba(255, 187, 0, 0.44), white);
+}
+.fotokidbuu {
+    background: linear-gradient(to bottom, rgba(248, 153, 253, 0.44), white);
+}
+.fotofrieza {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.44), white);
+}
+.fotofatbuu {
+    background: linear-gradient(to bottom, rgba(248, 153, 253, 0.44), white);
+}
+.fotobrolygoku {
+    background: linear-gradient(to bottom, rgba(149, 255, 0, 0.327), white);
+    height: 313px !important;
+}
+
+
+.producto-txt {
+    text-transform: uppercase;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* ==================================================== */
+/* BOTONES DE VER MAS FOTOS Y SUS CONFIGURACIONES P/C/U */
+
+
+.cta {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+   
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease;
+}
+   
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #000000d6;
+}
+   
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #000000;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+   
+.cta:hover:before {
+    width: 100%;
+}
+   
+.cta:hover svg {
+    transform: translateX(0);
+}
+   
+.cta:active {
+    transform: scale(0.95);
+}
+
+.productogoku .cta:before {
+    background: rgba(255, 187, 0, 0.259);
+}
+.productogoku .cta:hover:before {
+    background: rgba(255, 187, 0, 0.259);
+}
+
+
+.productokidbuu .cta:before {
+    background: rgba(248, 153, 253, 0.328);
+}
+.productokidbuu .cta:hover:before {
+    background: rgba(248, 153, 253, 0.333);
+}
+
+
+.productofrieza .cta:before {
+    background: rgba(0, 0, 0, 0.255);
+}
+.productofrieza .cta:hover:before {
+    background: rgba(0, 0, 0, 0.255);
+}
+
+
+.productofatbuu .cta:before {
+    background: rgba(248, 153, 253, 0.333);
+}
+.productofatbuu .cta:hover:before {
+    background: rgba(248, 153, 253, 0.333);
+}
+
+
+.productobrolygoku .cta:before {
+    background: rgba(149, 255, 0, 0.327);
+}
+.productobrolygoku .cta:hover:before {
+    background: rgba(149, 255, 0, 0.327);
+}
+
+.botones {
+    margin-bottom: 30px;
+}
+
+
+/* ==================================================== */
+/* BOTON DE WHATSAPP */
+
+.wsp {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 0.6;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.wsp:hover {
+    scale: 120%;
+    opacity: 1;
+    transition: 0.3s;
+}
+.wsp:not(:hover) {
+    transition: 0.5s;
 }
