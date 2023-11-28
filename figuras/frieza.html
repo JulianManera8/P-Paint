@@ -3,26 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../landingpage/css/figura.css"> 
     <title>P&Paint</title>
 </head>
 <body>
 
-    <header class="navbar_container" style="background-color: rgb(185, 185, 253);">    
+    <header class="navbar_container navbarfrieza" >    
         <div class="navbar">
             <ul>
-                <li> P&Paint </li>
-                <li> <a href="../index.html"> INICIO </a></li>
-                <li> <a href="https://wa.me/543413076880" target="_blank"> <img src="../landingpage/img/iconos/wsp.svg"> </a> </li>
+                <li> <h2 onclick="window.location.href='../index.html'"">Print & Paint</h2></li>
+                <li> <a href="../index.html" class="inicio">VOLVER AL INICIO</a></li>
+                <li> <a href="https://wa.me/543413076880" target="_blank"> <img src="../landingpage/img/iconos/wsp2.svg" width="50px" class="wsp"> </a> </li>
             </ul>
         </div>
     </header>
 
     <main>
-        <!-- ACA PONER BIEN PIOLA UNA GALERIA 
-        DESDE INICIO A FIN DE LO QUE PINTE-->
-        <section class="sectionContainer" id="lista-productos">
+        
+        <h3 class="tituloArriba"> FRIEZA FULL POWER - Namek </h3>
 
-            <div class="fotoContainer">
+        <section class="sectionContainer">
+
+            <div class="textoContainer">
+                <h3> FRIEZA FULL POWER - Namek </h3>
+                
+
+                <div class="especTec">
+                    <h5> Especificaciones </h5>
+                    <ul>
+                        <li> 8cm de alto x 6cm de ancho. </li>
+                        <li> Figura impresa en Resina. </li>
+                        <li> Pintado con pinturas acrilicas y a pincel. </li>
+                        <li> Barnizado con acabado mate. </li>
+                        <li> Base impresa en filamento plástico. </li>
+                    </ul>
+                </div>
+                              
+                <div class="botones productofrieza">
+                    <button class="cta" >
+                        <span>Pedir cotización</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn-volver" onclick="window.location.href='../index.html'">
+                        Volver
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="fotoContainer fotosfrieza">
                 
                 <div class="fotoPrincipal">
                     <img src="../landingpage/img/frieza/2friezaSF.png" width="500px" id="fotoPrincipal">
@@ -42,40 +74,18 @@
                         <img src="../landingpage/img/frieza/5friezaSF.png" width="100px" height="100px"  class="otraFoto">
                     </div>
                     <div class="foto">
-                        <img src="../landingpage/img/frieza/6friezadibujo.jpeg" width="100px" height="100px"  class="otraFoto">
+                        <img src="../landingpage/img/frieza/2friezaSF.png" width="100px" height="100px"  class="otraFoto">
                     </div>
                 </div>
             </div>
             
 
-            <div class="textoContainer">
-                <h3> FRIEZA FINAL FORM FULL POWER - vs GOKU en namek </h3>
-                
-
-                <div class="especTec">
-                    <h5> Especificaciones </h5>
-                    <ul>
-                        <li> 8cm de alto x 6cm de ancho. </li>
-                        <li> Figura impresa en Resina. </li>
-                        <li> Pintado con pinturas acrilicas y a pincel. </li>
-                        <li> Barnizado con acabado mate. </li>
-                        <li> Base impresa en filamento plástico. </li>
-                    </ul>
-                </div>
-                
-
-                                
-                <button class="copiarLink">
-                    Quiero este!
-                </button>
-                <button class="btn-volver" onclick="window.location.href='../index.html'">
-                    Volver
-                </button>
-            </div>  
+              
         </section> 
         
     </main>
 
-    
+    <script src="../landingpage/js/figura.js"></script>
+
 </body>
 </html>

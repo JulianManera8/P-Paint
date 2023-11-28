@@ -25,9 +25,21 @@ body {
 /*SECTION DEL HEADER*/
 
 .navbar_container {
-    background: linear-gradient(to bottom, #f9d86d, rgba(255, 255, 255, 0.47));
     padding: 20px;
     height: 15vh;
+}
+.navbargoku {
+    background: linear-gradient(to bottom, #f9d86d, rgba(255, 255, 255, 0.47));
+}
+.navbarkidbuu {
+    background: linear-gradient(to bottom, rgb(248, 153, 253), rgba(255, 255, 255, 0.47));
+}
+.navbarfrieza {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.888), white);
+}
+.navbarbrolygoku {
+    background: linear-gradient(to bottom, rgba(149, 255, 0, 0.696), white);
+
 }
 
 .navbar ul {
@@ -104,20 +116,38 @@ ul h2 {
 
 .fotoContainer {
     width: 50vw;
-    /* background: radial-gradient(circle,white, rgb(251, 216, 171)), linear-gradient(to left, antiquewhite, white); */
-    background: conic-gradient(#f5dc89, #ffffff);
     border-radius: 1rem;
 }
+.fotosgoku {
+    background: conic-gradient(#f5dc89, #ffffff);
+}
+.fotoskidbuu {
+    background: conic-gradient(rgba(248, 153, 253, 0.655), #ffffff);
+}
+.fotosfrieza {
+    background: conic-gradient(rgba(0, 0, 0, 0.614), #ffffff);
+}
+.fotosbrolygoku {
+    background: conic-gradient(rgba(149, 255, 0, 0.383), #ffffff);
+}
+.fotosfrieza img, .fotosgoku img, .fotosfatbuu img {
+    scale: 120%;
+}
+.fotosbrolygoku img {
+    scale: 140%;
+}
+
+
 
 .fotoPrincipal {
     width: 50vw;
-    object-fit: contain !important;
-
+    height: 40vw;
 }
 
 .fotoPrincipal img {
     width: 100%;
-
+    height: 100%;
+    object-fit:contain !important;
 }
 
 .otrasFotos {
@@ -262,10 +292,32 @@ h4 {
 .productogoku .cta:hover:before {
     background: rgba(255, 187, 0, 0.259);
 }
-  
+.productokidbuu .cta:before {
+    background: rgba(248, 153, 253, 0.655);
+}
+.productokidbuu .cta:hover:before {
+    background: rgba(248, 153, 253, 0.655);
+}
+.productofrieza .cta:before {
+    background: rgba(0, 0, 0, 0.445);
+}
+.productofrieza .cta:hover:before {
+    background: rgba(0, 0, 0, 0.434);
+}
+.productobrolygoku .cta:before {
+    background: rgba(149, 255, 0, 0.383);
+}
+.productobrolygoku .cta:hover:before {
+    background: rgba(149, 255, 0, 0.383);
+}
+
+
 /*=========================*/
 /*ARRANCAMOS CON LAS MEDIAS*/
 @media (width < 983px)  {
+    .inicio {
+        display: none;
+    }
     .tituloArriba {
         display: flex;
         text-align: center;

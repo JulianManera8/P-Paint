@@ -3,26 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../landingpage/css/figura.css"> 
     <title>P&Paint</title>
 </head>
 <body>
 
-    <header class="navbar_container" style="background-color: rgb(185, 185, 253);">    
+    <header class="navbar_container navbarbrolygoku" >    
         <div class="navbar">
             <ul>
-                <li> P&Paint </li>
-                <li> <a href="../index.html"> INICIO </a></li>
-                <li> <a href="https://wa.me/543413076880" target="_blank"> <img src="../landingpage/img/iconos/wsp.svg"> </a> </li>
+                <li> <h2 onclick="window.location.href='../index.html'"">Print & Paint</h2></li>
+                <li> <a href="../index.html" class="inicio">VOLVER AL INICIO</a></li>
+                <li> <a href="https://wa.me/543413076880" target="_blank"> <img src="../landingpage/img/iconos/wsp2.svg" width="50px" class="wsp"> </a> </li>
             </ul>
         </div>
     </header>
 
     <main>
-        <!-- ACA PONER BIEN PIOLA UNA GALERIA 
-        DESDE INICIO A FIN DE LO QUE PINTE-->
-        <section class="sectionContainer" id="lista-productos">
+        <h3 class="tituloArriba"> BROLY vs GOKU - OG version </h3>
 
-            <div class="fotoContainer">
+        <section class="sectionContainer">
+
+            <div class="textoContainer">
+                <h3> BROLY vs GOKU - OG version </h3>
+
+                <div class="especTec">
+                    <h5> Especificaciones </h5>
+                    <ul>
+                        <li> 14cm de alto x 12,5cm de ancho (total). </li>
+                        <li> Goku: 12cm de alto x 3cm de ancho.</li>
+                        <li> Broly: 13cm de alto x 10cm de ancho.</li>
+                        <li> Figura impresa en Resina. </li>
+                        <li> Base gris hecha a mano en porcelana fria, pintada y barnizada. </li>
+                        <li> Pintado con pinturas acrilicas y a pincel. </li>
+                        <li> Barnizado con acabado mate. </li>
+                        <li> Base impresa en filamento plástico. </li>
+                    </ul>
+                </div>
+                                
+                <div class="botones productobrolygoku">
+                    <button class="cta" >
+                        <span>Pedir cotización</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn-volver" onclick="window.location.href='../index.html'">
+                        Volver
+                    </button>
+                </div>
+
+            </div> 
+
+            <div class="fotoContainer fotosbrolygoku">
                 
                 <div class="fotoPrincipal">
                     <img src="../landingpage/img/broly/2broly-gokuSF.png" width="500px" height="500px" id="fotoPrincipal">
@@ -42,43 +75,18 @@
                         <img src="../landingpage/img/broly/5broly-gokuSF.png" width="100px" height="100px"  class="otraFoto">
                     </div>
                     <div class="foto">
-                        <img src="../landingpage/img/broly/7broly-gokudibujo.png" width="100px" height="100px"  class="otraFoto">
+                        <img src="../landingpage/img/broly/2broly-gokuSF.png" width="100px" height="100px"  class="otraFoto">
                     </div>
                 </div>
             </div>
             
 
-            <div class="textoContainer">
-                <h3> Broly ssj Legendario vs Goku ssj1 - pelea primer pelicula de broly</h3>
-                
-
-                <div class="especTec">
-                    <h5> Especificaciones </h5>
-                    <ul>
-                        <li> 14cm de alto x 12,5cm de ancho (total). </li>
-                        <li> Goku: 12cm de alto x 3cm de ancho.</li>
-                        <li> Broly: 13cm de alto x 10cm de ancho.</li>
-                        <li> Figura impresa en Resina. </li>
-                        <li> Base gris hecha a mano en porcelana fria, pintada y barnizada. </li>
-                        <li> Pintado con pinturas acrilicas y a pincel. </li>
-                        <li> Barnizado con acabado mate. </li>
-                        <li> Base impresa en filamento plástico. </li>
-                    </ul>
-                </div>
-                
-
-                                
-                <button class="copiarLink">
-                    Quiero este!
-                </button>
-                <button class="btn-volver" onclick="window.location.href='../index.html'">
-                    Volver
-                </button>
-            </div>  
+             
         </section> 
         
     </main>
 
-    
+    <script src="../landingpage/js/figura.js"></script>
+
 </body>
 </html>
