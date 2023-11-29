@@ -104,6 +104,15 @@ ul h2 {
     justify-content: space-between;
 }
 
+.signoIzq, .signoDer {
+    display: none;
+}
+.cerrarZoom {
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+
 .textoContainer {
     width: 40vw;
     display: flex;
@@ -381,6 +390,93 @@ h4 {
     }
     .botones {
         margin-bottom: 80px;
+    }
+}
+
+@media (width < 450px) {
+    .tituloArriba {
+        font-size: clamp(1rem, 6vw, 2rem);
+    }
+
+    .fotoPrincipal {
+        height: 50vh;
+        width: 80vw;
+        z-index: 10;
+    }
+
+    .fotoPrincipal img {
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .otrasFotos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .foto img {
+        z-index: 1;
+    }
+
+    .fotoskidbuu img {
+        scale: 120%;
+    }
+
+    .cerrarZoom {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        color: white;
+        border-radius: 50%;
+        border: 4px solid white;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    /* .signoIzq , .signoDer {
+        display: flex;
+        position: relative;
+        top: 45%;
+        font-size: 10vw;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.47);
+        text-decoration: none;
+        height: 40px;
+        width: 60px;
+        z-index: 2;
+        margin: 0 -10px;
+    } */
+
+    /* .signoIzq:active, .signoDer:active {
+        scale: 90%;
+        transition: 0.1s;
+        background-color: transparent;
+    } */
+
+    .textoContainer {
+        width: 80vw;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .btnWsp {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
     }
 }
 

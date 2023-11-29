@@ -110,6 +110,52 @@ btnWsp.onclick = function() {
 }
 
 
+//FUNCIONALIDAD DE ZOOM PARA LAS FIGURAS EN MOBILE
+// const cerrarZoom = document.getElementById('cerrarZoom');
+// const body = document.querySelector('body');
+// var imgPrincipalFoto = document.querySelector('.fotoPrincipal img'); 
+
+// imgPrincipal.onclick = function() {
+//     imgPrincipalFoto.style.scale = '250%'
+//     imgPrincipalFoto.style.transition = '0.3s ease'
+//     imgPrincipalFoto.style.background = '#000000cd'
+
+//     setTimeout(function () {
+//         cerrarZoom.style.display = 'flex'
+//     }, 500);
+
+// }
+
+// cerrarZoom.onclick = function() {
+//     cerrarZoom.style.display = 'none'
+//     imgPrincipalFoto.style.scale = '120%'
+//     imgPrincipalFoto.style.background = 'transparent'
+// }
 
 
+//FUNCIONALIDAD SLIDER CUANDO ES MOBILE
+
+// const flechaDer = document.getElementById('flechaDer');
+// const flechaIzq = document.getElementById('flechaIzq');
+
+
+//IDEA
+// Cada vez que toque la flecha, que me lea el data-id de 
+// la foto que esta en el imgPrincipal, porque ahi yo voy a 
+// ir pasandole tambien el data-id junto con el src. 
+// dependiendo del numero, que tenga, se pasa el siguiente 
+// si toco la flecha derecha, o el anterior.
+
+
+// flechaDer.onclick = function(e) {
+//     imgPrincipal.src = otraFoto[0].src;
+//     const dataId = imgPrincipalFoto.dataset.id;
+//     console.log(dataId)
+    
+    
+// }
+
+// flechaIzq.onclick = function() {
+//     console.log('flechaIzq clicked')
+// }
 
