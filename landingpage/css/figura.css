@@ -122,7 +122,7 @@ ul h2 {
     background: conic-gradient(#f5dc89, #ffffff);
 }
 .fotoskidbuu {
-    background: conic-gradient(rgba(248, 153, 253, 0.655), #ffffff);
+    background: conic-gradient(rgba(248, 153, 253, 0.456), #ffffff);
 }
 .fotosfrieza {
     background: conic-gradient(rgba(0, 0, 0, 0.614), #ffffff);
@@ -150,20 +150,38 @@ ul h2 {
     object-fit:contain !important;
 }
 
+.foto img:hover {
+    scale: 130%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.foto img:not(:hover) {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 .otrasFotos {
     display: flex;
     width: 100% !important;
     text-align: center;
     justify-content: center;
+    margin-bottom: 20px;
+    z-index: 2;
+
 }
 
 .otrasFotos img {
     object-fit: cover;
     width: 100px;
     height: 100px;
+    cursor: pointer;
 }
 
-.base, .dibujo {
+.base {
     object-fit: contain !important;
 }
 
@@ -187,6 +205,22 @@ h4 {
     padding-bottom: 15px;
     font-size: 20px;
 }
+
+.difuminar {
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.achicar {
+    scale: 0% !important;
+    transition: all 0.3s ease;
+}
+
+.achicarOtraFoto {
+    scale: 100% !important;
+    transition: 0.2s;
+}
+
 
 
 
