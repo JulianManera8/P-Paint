@@ -71,7 +71,7 @@ header {
     margin-bottom: 40px;
     color: white;
     font-family: 'Marhey', sans-serif;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.737);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
 
@@ -299,7 +299,7 @@ header {
 /*=================================*/
 /*MEDIAS PARA HACERLO RESPONSIVE */
 
-@media (width <= 770px) {
+@media (width <= 800px) {
     header {
         max-width: 100%;
         height: 80vh !important;
@@ -318,6 +318,8 @@ header {
         text-align: center;
 
     }
+
+
     .texto-imagen_container {
         margin: 0 auto;
     }
@@ -330,6 +332,8 @@ header {
     .texto {
         color: rgb(255, 255, 255);
         width: 85vw;
+        font-size: clamp(1rem, 3vw, 2rem);
+
     }
 
     .signoBajar {
@@ -340,14 +344,19 @@ header {
 
 /*PARA CELULARES*/
 @media (width < 450px) {
+    body {
+        max-width: 100vw;
+    }
 
     header {
-        height: 70vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100vw;
+        justify-content:center;
+        align-items:center;
+        max-width: 100vw;
+        position: relative;
+        top: -10px;
+        margin: auto;
     }
 
 
@@ -358,11 +367,11 @@ header {
 
     .titulo {
         text-align: center;
-        margin: auto;
         display: flex;
         flex-direction: row;
-        margin-bottom: 10px;
-        font-size: 9.5vw;
+        position: relative;
+        top: -50%;
+        font-size: clamp(1rem, 9.5vw, 2rem);
     }
 
     .imagen {
@@ -373,7 +382,9 @@ header {
         display: flex;
         margin: auto;
         text-align: center;
-        justify-content: center;
+        justify-content: end;
+        font-size: clamp(1rem, 6vw, 2rem);
+
     }
 
     main {
@@ -384,15 +395,29 @@ header {
         text-align: center;
     }
 
-    .productos_container {
+    .productos_container, .producto {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin: 0  auto;
-        scale: 90%;
+        max-width: 300px;
+    }
+
+    .producto {
+        margin-top: 60px;
+    }
+
+    .producto img {
+        max-width: 100%;
+    }
+
+    .producto-txt {
+        font-size: clamp(1rem, 2vw, 2rem);
     }
 
     .productobrolygoku {
         margin-bottom: 200px;
     }
+
 }
+
+    
