@@ -121,6 +121,13 @@ ul h2 {
     position: relative;
     top: 30px;
     margin-left: 30px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+h5 {
+    margin-bottom: 15px;
+    text-decoration: underline;
 }
 
 .fotoContainer {
@@ -196,11 +203,13 @@ ul h2 {
 
 .tituloArriba {
     display: none;
+    font-family: 'Shantell Sans', cursive; 
 }
 
 h3 {
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Shantell Sans', cursive; 
 }
 
 h4 {
@@ -361,6 +370,11 @@ h4 {
     .inicio {
         display: none;
     }
+    .textoContainer {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+
+    }
+
     .tituloArriba {
         display: flex;
         text-align: center;
